@@ -1,6 +1,22 @@
 doctype html 
 head
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+    //- <link rel="stylesheet", href="/common.blocks/wishes/wishes.scss">
     title hotel
-h1 hello world
-h2 hellow worl
+body
+    div(class='boxWishes')
+        h1(class='cardHeader boxWishes__cardHeader') Найдём номера под <br>ваши пожелания
+        div(class='boxWishes__date boxWishes__date_margin-left')
+            span(class='boxElementHeader') прибытие
+            div(class='dateDropdown arrive boxWishes__dateDropdown')
+                 span(class='dropdownText') ДД.ММ.ГГГГ 
+                 //-  img(src="./image/expand_more.svg", alt="expand_more")                     
+                 div(class='expandMore')
+        div(class='boxWishes__date leave boxWishes__date_margin-right')
+            span(class='boxElementHeader') выезд    
+            div(class='dateDropdown arrive boxWishes__dateDropdown')
+                 p(class='dropdownText') ДД.ММ.ГГГГ
+                 div(class='expandMore')
+                
 script(src="index.js")

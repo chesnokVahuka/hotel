@@ -1,5 +1,100 @@
+body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+h2 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: normal;
+  color: #1F2041;
+}
+
 h1 {
-  color: red;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: normal;
+  color: #1F2041;
+}
+.boxWishes {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 380px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: content-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: normal;
+}
+.boxWishes__cardHeader {
+  margin: 40px 30px;
+}
+.dateDropdown {
+  background: #FFFFFF;
+  /* Dark 25% */
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 150px;
+  height: 44px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxWishes__date_margin-left {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.boxWishes__date_margin-right {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+.boxWishes__date {
+  width: 150px;
+}
+.boxElementHeader {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.dropdownText {
+  display: inline-block;
+}
+.expandMore {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: url(/expand_more.7437d812.svg) 50% 50% no-repeat;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

@@ -184,16 +184,79 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/style.scss":[function(require,module,exports) {
+},{"./bundle-url":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/main.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxWishes/boxWishes.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxWishes/__cardHeader.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxWishes/dateDropdown.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxWishes/_margin-left.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxWishes/_margin-right.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxWishes/__date.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/boxElementHeader/boxElementHeader.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/dropdown/dropdownText.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/expandMore/expandMore.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"D:\\FSD\\hotel\\src\\image\\expand_more.svg":[["expand_more.7437d812.svg","image/expand_more.svg"],"image/expand_more.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
-require("./css/style.scss");
-},{"./css/style.scss":"css/style.scss"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+require("./css/main.scss");
+
+require("./common.blocks/boxWishes/boxWishes.scss");
+
+require("./common.blocks/boxWishes/__cardHeader.scss");
+
+require("./common.blocks/boxWishes/dateDropdown.scss");
+
+require("./common.blocks/boxWishes/_margin-left.scss");
+
+require("./common.blocks/boxWishes/_margin-right.scss");
+
+require("./common.blocks/boxWishes/__date.scss");
+
+require("./libraty.blocks/boxElementHeader/boxElementHeader.scss");
+
+require("./libraty.blocks/dropdown/dropdownText.scss");
+
+require("./libraty.blocks/expandMore/expandMore.scss");
+},{"./css/main.scss":"css/main.scss","./common.blocks/boxWishes/boxWishes.scss":"common.blocks/boxWishes/boxWishes.scss","./common.blocks/boxWishes/__cardHeader.scss":"common.blocks/boxWishes/__cardHeader.scss","./common.blocks/boxWishes/dateDropdown.scss":"common.blocks/boxWishes/dateDropdown.scss","./common.blocks/boxWishes/_margin-left.scss":"common.blocks/boxWishes/_margin-left.scss","./common.blocks/boxWishes/_margin-right.scss":"common.blocks/boxWishes/_margin-right.scss","./common.blocks/boxWishes/__date.scss":"common.blocks/boxWishes/__date.scss","./libraty.blocks/boxElementHeader/boxElementHeader.scss":"libraty.blocks/boxElementHeader/boxElementHeader.scss","./libraty.blocks/dropdown/dropdownText.scss":"libraty.blocks/dropdown/dropdownText.scss","./libraty.blocks/expandMore/expandMore.scss":"libraty.blocks/expandMore/expandMore.scss"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -221,7 +284,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2872" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1815" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
