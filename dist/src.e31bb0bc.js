@@ -219,12 +219,27 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxWishes/dropdown/__text.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxWishes/__guests.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/buttons/bigButtons/__bigButton.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/boxElementHeader/boxElementHeader.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/dropdown/dropdownText.scss":[function(require,module,exports) {
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/dropdown/text.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -234,7 +249,17 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"D:\\FSD\\hotel\\src\\image\\expand_more.svg":[["expand_more.7437d812.svg","image/expand_more.svg"],"image/expand_more.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"D:\\FSD\\hotel\\src\\image\\expand_more.svg":[["expand_more.7437d812.svg","image/expand_more.svg"],"image/expand_more.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/dropdown/dropdown/dropdown.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/buttons/bigButtons/bigButton.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./css/main.scss");
@@ -251,12 +276,22 @@ require("./common.blocks/boxWishes/_margin-right.scss");
 
 require("./common.blocks/boxWishes/__date.scss");
 
+require("./common.blocks/boxWishes/dropdown/__text.scss");
+
+require("./common.blocks/boxWishes/__guests.scss");
+
+require("/common.blocks/buttons/bigButtons/__bigButton.scss");
+
 require("./libraty.blocks/boxElementHeader/boxElementHeader.scss");
 
-require("./libraty.blocks/dropdown/dropdownText.scss");
+require("./libraty.blocks/dropdown/text.scss");
 
 require("./libraty.blocks/expandMore/expandMore.scss");
-},{"./css/main.scss":"css/main.scss","./common.blocks/boxWishes/boxWishes.scss":"common.blocks/boxWishes/boxWishes.scss","./common.blocks/boxWishes/__cardHeader.scss":"common.blocks/boxWishes/__cardHeader.scss","./common.blocks/boxWishes/dateDropdown.scss":"common.blocks/boxWishes/dateDropdown.scss","./common.blocks/boxWishes/_margin-left.scss":"common.blocks/boxWishes/_margin-left.scss","./common.blocks/boxWishes/_margin-right.scss":"common.blocks/boxWishes/_margin-right.scss","./common.blocks/boxWishes/__date.scss":"common.blocks/boxWishes/__date.scss","./libraty.blocks/boxElementHeader/boxElementHeader.scss":"libraty.blocks/boxElementHeader/boxElementHeader.scss","./libraty.blocks/dropdown/dropdownText.scss":"libraty.blocks/dropdown/dropdownText.scss","./libraty.blocks/expandMore/expandMore.scss":"libraty.blocks/expandMore/expandMore.scss"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+require("./libraty.blocks/dropdown/dropdown/dropdown.scss");
+
+require("./libraty.blocks/buttons/bigButtons/bigButton.scss");
+},{"./css/main.scss":"css/main.scss","./common.blocks/boxWishes/boxWishes.scss":"common.blocks/boxWishes/boxWishes.scss","./common.blocks/boxWishes/__cardHeader.scss":"common.blocks/boxWishes/__cardHeader.scss","./common.blocks/boxWishes/dateDropdown.scss":"common.blocks/boxWishes/dateDropdown.scss","./common.blocks/boxWishes/_margin-left.scss":"common.blocks/boxWishes/_margin-left.scss","./common.blocks/boxWishes/_margin-right.scss":"common.blocks/boxWishes/_margin-right.scss","./common.blocks/boxWishes/__date.scss":"common.blocks/boxWishes/__date.scss","./common.blocks/boxWishes/dropdown/__text.scss":"common.blocks/boxWishes/dropdown/__text.scss","./common.blocks/boxWishes/__guests.scss":"common.blocks/boxWishes/__guests.scss","/common.blocks/buttons/bigButtons/__bigButton.scss":"common.blocks/buttons/bigButtons/__bigButton.scss","./libraty.blocks/boxElementHeader/boxElementHeader.scss":"libraty.blocks/boxElementHeader/boxElementHeader.scss","./libraty.blocks/dropdown/text.scss":"libraty.blocks/dropdown/text.scss","./libraty.blocks/expandMore/expandMore.scss":"libraty.blocks/expandMore/expandMore.scss","./libraty.blocks/dropdown/dropdown/dropdown.scss":"libraty.blocks/dropdown/dropdown/dropdown.scss","./libraty.blocks/buttons/bigButtons/bigButton.scss":"libraty.blocks/buttons/bigButtons/bigButton.scss"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -284,7 +319,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1815" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "17934" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

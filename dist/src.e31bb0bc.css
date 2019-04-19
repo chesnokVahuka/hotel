@@ -14,7 +14,6 @@ h3 {
   font-size: 12px;
   line-height: normal;
   text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.75);
 }
 
 h2 {
@@ -23,7 +22,6 @@ h2 {
   font-weight: bold;
   font-size: 19px;
   line-height: normal;
-  color: #1F2041;
 }
 
 h1 {
@@ -32,7 +30,6 @@ h1 {
   font-weight: bold;
   font-size: 24px;
   line-height: normal;
-  color: #1F2041;
 }
 .boxWishes {
   display: flex;
@@ -52,7 +49,7 @@ h1 {
   line-height: normal;
 }
 .boxWishes__cardHeader {
-  margin: 40px 30px;
+  margin: 40px 30px 20px;
 }
 .dateDropdown {
   background: #FFFFFF;
@@ -65,7 +62,7 @@ h1 {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .boxWishes__date_margin-left {
   margin-left: 30px;
@@ -77,6 +74,15 @@ h1 {
 }
 .boxWishes__date {
   width: 150px;
+}
+.dropdown__text {
+  margin-left: 15px;
+}
+.boxWishes__guests {
+  margin: 20px auto 0px;
+}
+.boxWishes__bigButton {
+  margin: 30px;
 }
 .boxElementHeader {
   font-family: Montserrat;
@@ -95,6 +101,31 @@ h1 {
   width: 44px;
   height: 44px;
   background: url(/expand_more.7437d812.svg) 50% 50% no-repeat;
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  background: #FFFFFF;
+  /* Dark 25% */
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.bigButton {
+  width: 320px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
