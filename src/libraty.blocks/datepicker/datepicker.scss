@@ -1,0 +1,64 @@
+
+.datepicker{
+    width:320px!important;
+}
+.datepicker--cells{
+    justify-content:center; 
+}
+.datepicker--cell{
+    width:40px!important;
+    height:40px!important;
+}
+.datepicker--cell-month{
+    width:50px!important;
+    height:50px!important;
+}
+.datepicker--day-name{
+    max-width:40px!important;
+    height:40px!important;
+}
+.datepicker--days-names{
+    justify-content: center;
+}
+.datepicker--buttons{
+    border:none;
+}
+td{
+    width: 40px;
+    height: 40px; 
+}
+// .ui-datepicker-current-day{
+.datepicker--pointer{
+    display: none;
+}
+.-selected-{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) !important;
+    border-radius: 50% !important;    
+}
+.-in-range-{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) !important;
+    opacity: 0.25;
+    border-radius:50% !important;
+}
+.-current-{
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%) !important;
+    border-radius:50% !important;
+    color: #fff !important;
+}
+
+
+.datepicker__button_opacity_50{
+    color: rgba(31, 32, 65, 0.5)!important;
+}
+.buttonBar{
+    display: flex;
+    justify-content: space-between;
+}
+.datepicker__button_left{
+   margin-left: 30px;
+//    justify-self: flex-start;
+}
+.datepicker__button_right{
+    margin-right: 30px;
+    // justify-self: flex-end;
+}
