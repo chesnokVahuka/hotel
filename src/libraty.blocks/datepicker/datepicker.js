@@ -53,8 +53,8 @@
 
             // navigation
             monthsField: 'monthsShort',
-            prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
-            nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
+            prevHtml:'<div class="prevImg"></div>',//'<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
+            nextHtml: '<div class="nextImg"></div>',//'<svg><path d="M 14,12 l 5,5 l -5,5 "></path></svg>',
             navTitles: {
                 days: 'MM, <i>yyyy</i>',
                 months: 'yyyy',
@@ -776,7 +776,7 @@
                     top = dims.top + dims.height + offset;
                     break;
                 case 'left':
-                    left = dims.left - selfDims.width - offset;
+                    left = 40;//dims.left - selfDims.width - offset;
                     break;
             }
 
@@ -803,7 +803,7 @@
 
             this.$datepicker
                 .css({
-                    left: left,
+                    left:40,//left,
                     top: top
                 })
         },
@@ -1695,7 +1695,7 @@
         _getMonthHtml: function (date) {
             var content = this._getCellContents(date, 'month');
 
-            return '<div class="' + content.classes + '" data-month="' + date.getMonth() + '">' + content.html + '</div>'
+            return '<div class="' + content.classes + '" data-month="' + date.getMonth() + '">' +'<p>' + content.html + '</p>' + '</div>'
         },
 
         _getYearsHtml: function (date) {

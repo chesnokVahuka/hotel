@@ -7753,7 +7753,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"D:\\FSD\\hotel\\src\\image\\expand_more.svg":[["expand_more.7437d812.svg","image/expand_more.svg"],"image/expand_more.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/dropdown/dropdown/dropdown.scss":[function(require,module,exports) {
+},{"D:\\FSD\\hotel\\src\\image\\expand_more.svg":[["expand_more.7437d812.svg","image/expand_more.svg"],"image/expand_more.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/dropdown/dropdown.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -7819,8 +7824,10 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       autoClose: false,
       // navigation
       monthsField: 'monthsShort',
-      prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
-      nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
+      prevHtml: '<div class="prevImg"></div>',
+      //'<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
+      nextHtml: '<div class="nextImg"></div>',
+      //'<svg><path d="M 14,12 l 5,5 l -5,5 "></path></svg>',
       navTitles: {
         days: 'MM, <i>yyyy</i>',
         months: 'yyyy',
@@ -8541,7 +8548,8 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
             break;
 
           case 'left':
-            left = dims.left - selfDims.width - offset;
+            left = 40; //dims.left - selfDims.width - offset;
+
             break;
         }
 
@@ -8572,7 +8580,8 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
         }
 
         this.$datepicker.css({
-          left: left,
+          left: 40,
+          //left,
           top: top
         });
       },
@@ -9436,7 +9445,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
       _getMonthHtml: function _getMonthHtml(date) {
         var content = this._getCellContents(date, 'month');
 
-        return '<div class="' + content.classes + '" data-month="' + date.getMonth() + '">' + content.html + '</div>';
+        return '<div class="' + content.classes + '" data-month="' + date.getMonth() + '">' + '<p>' + content.html + '</p>' + '</div>';
       },
       _getYearsHtml: function _getYearsHtml(date) {
         var d = dp.getParsedDate(date),
@@ -9944,30 +9953,30 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     };
   })();
 })(window, jQuery);
-},{}],"libraty.blocks/datepicker/datepicker.css":[function(require,module,exports) {
+},{}],"libraty.blocks/datepicker/datepicker.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/datepicker/datepicker.scss":[function(require,module,exports) {
+},{"./..\\..\\image\\arrow_forward.svg":[["arrow_forward.377f292f.svg","image/arrow_forward.svg"],"image/arrow_forward.svg"],"./..\\..\\image\\arrow_back.svg":[["arrow_back.9656c105.svg","image/arrow_back.svg"],"image/arrow_back.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/counter/counter.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./image\\-.svg":[["-.ef31e427.svg","libraty.blocks/counter/image/-.svg"],"libraty.blocks/counter/image/-.svg"],"./image\\+.svg":[["+.5eb9825f.svg","libraty.blocks/counter/image/+.svg"],"libraty.blocks/counter/image/+.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/buttons/inlineButtons/inlineButtons.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/buttons/inlineButtons/__inlineButton.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/dropdown/dateDropdown/dateDropdown.js":[function(require,module,exports) {
-// $('.datepicker-here').datepicker({
-//     minDate: new Date(),
-//     range: true,
-//     clearButton: true,
-//     closeButton: true, 
-//     inline:false,
-//     Buttons: {
-//         button: '<h3>Выберете дату заезда</h3>'
-//     }
-// })
-// $('.datepicker-here').on('click',function(){
-//    $('.datepicker-here')
-// });
+$('.leave .datepicker-here').on('focus click', function (event) {
+  $(this).off();
+});
 var datepicker = $('.datepicker-here').datepicker({
   minDate: new Date(),
   // offset:0,
@@ -9983,16 +9992,15 @@ var datepicker = $('.datepicker-here').datepicker({
     $('.leave').val(arriveDate.substring(11, arriveDate.length));
   }
 }).data('datepicker');
+$('.dateDropdown input').on('keypress', function (event) {
+  event.preventDefault();
+});
 $('.datepicker--buttons').append('<span class="datepicker--button accept"> Применить </span>');
 $('.accept').on('click', function () {
-  // $('.arrive').text(arriveDate.substring(1, arriveDate.length));
   datepicker.hide();
 });
 $('.dateDropdown').on('click', function () {
   datepicker.show();
-});
-$('.leave .datepicker-here').on('focus click', function (event) {
-  $(this).off();
 });
 },{}],"css/jquery-ui-1.12.1.custom/datepicker-ru.js":[function(require,module,exports) {
 var define;
@@ -10061,7 +10069,9 @@ require("./libraty.blocks/dropdown/text.scss");
 
 require("./libraty.blocks/expandMore/expandMore.scss");
 
-require("./libraty.blocks/dropdown/dropdown/dropdown.scss");
+require("./libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss");
+
+require("./libraty.blocks/dropdown/dropdown.scss");
 
 require("./libraty.blocks/buttons/bigButtons/bigButton.scss");
 
@@ -10069,14 +10079,18 @@ require("./libraty.blocks/datepicker/datepickerButton.scss");
 
 require("./libraty.blocks/datepicker/datepicker.js");
 
-require("./libraty.blocks/datepicker/datepicker.css");
-
 require("./libraty.blocks/datepicker/datepicker.scss");
+
+require("./libraty.blocks/counter/counter.scss");
+
+require("/libraty.blocks/buttons/inlineButtons/inlineButtons.scss");
+
+require("./common.blocks/buttons/inlineButtons/__inlineButton.scss");
 
 require("./libraty.blocks/dropdown/dateDropdown/dateDropdown.js");
 
 require("./css/jquery-ui-1.12.1.custom/datepicker-ru.js");
-},{"./css/jquery-ui-1.12.1.custom/jquery-ui.css":"css/jquery-ui-1.12.1.custom/jquery-ui.css","./css/jquery-ui-1.12.1.custom/jquery-ui.min.js":"css/jquery-ui-1.12.1.custom/jquery-ui.min.js","./css/main.scss":"css/main.scss","./common.blocks/boxWishes/boxWishes.scss":"common.blocks/boxWishes/boxWishes.scss","./common.blocks/boxWishes/__cardHeader.scss":"common.blocks/boxWishes/__cardHeader.scss","./common.blocks/boxWishes/dateDropdown.scss":"common.blocks/boxWishes/dateDropdown.scss","./common.blocks/boxWishes/_margin-left.scss":"common.blocks/boxWishes/_margin-left.scss","./common.blocks/boxWishes/_margin-right.scss":"common.blocks/boxWishes/_margin-right.scss","./common.blocks/boxWishes/__date.scss":"common.blocks/boxWishes/__date.scss","./common.blocks/boxWishes/dropdown/__text.scss":"common.blocks/boxWishes/dropdown/__text.scss","./common.blocks/boxWishes/__guests.scss":"common.blocks/boxWishes/__guests.scss","/common.blocks/buttons/bigButtons/__bigButton.scss":"common.blocks/buttons/bigButtons/__bigButton.scss","./libraty.blocks/boxElementHeader/boxElementHeader.scss":"libraty.blocks/boxElementHeader/boxElementHeader.scss","./libraty.blocks/dropdown/text.scss":"libraty.blocks/dropdown/text.scss","./libraty.blocks/expandMore/expandMore.scss":"libraty.blocks/expandMore/expandMore.scss","./libraty.blocks/dropdown/dropdown/dropdown.scss":"libraty.blocks/dropdown/dropdown/dropdown.scss","./libraty.blocks/buttons/bigButtons/bigButton.scss":"libraty.blocks/buttons/bigButtons/bigButton.scss","./libraty.blocks/datepicker/datepickerButton.scss":"libraty.blocks/datepicker/datepickerButton.scss","./libraty.blocks/datepicker/datepicker.js":"libraty.blocks/datepicker/datepicker.js","./libraty.blocks/datepicker/datepicker.css":"libraty.blocks/datepicker/datepicker.css","./libraty.blocks/datepicker/datepicker.scss":"libraty.blocks/datepicker/datepicker.scss","./libraty.blocks/dropdown/dateDropdown/dateDropdown.js":"libraty.blocks/dropdown/dateDropdown/dateDropdown.js","./css/jquery-ui-1.12.1.custom/datepicker-ru.js":"css/jquery-ui-1.12.1.custom/datepicker-ru.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./css/jquery-ui-1.12.1.custom/jquery-ui.css":"css/jquery-ui-1.12.1.custom/jquery-ui.css","./css/jquery-ui-1.12.1.custom/jquery-ui.min.js":"css/jquery-ui-1.12.1.custom/jquery-ui.min.js","./css/main.scss":"css/main.scss","./common.blocks/boxWishes/boxWishes.scss":"common.blocks/boxWishes/boxWishes.scss","./common.blocks/boxWishes/__cardHeader.scss":"common.blocks/boxWishes/__cardHeader.scss","./common.blocks/boxWishes/dateDropdown.scss":"common.blocks/boxWishes/dateDropdown.scss","./common.blocks/boxWishes/_margin-left.scss":"common.blocks/boxWishes/_margin-left.scss","./common.blocks/boxWishes/_margin-right.scss":"common.blocks/boxWishes/_margin-right.scss","./common.blocks/boxWishes/__date.scss":"common.blocks/boxWishes/__date.scss","./common.blocks/boxWishes/dropdown/__text.scss":"common.blocks/boxWishes/dropdown/__text.scss","./common.blocks/boxWishes/__guests.scss":"common.blocks/boxWishes/__guests.scss","/common.blocks/buttons/bigButtons/__bigButton.scss":"common.blocks/buttons/bigButtons/__bigButton.scss","./libraty.blocks/boxElementHeader/boxElementHeader.scss":"libraty.blocks/boxElementHeader/boxElementHeader.scss","./libraty.blocks/dropdown/text.scss":"libraty.blocks/dropdown/text.scss","./libraty.blocks/expandMore/expandMore.scss":"libraty.blocks/expandMore/expandMore.scss","./libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss":"libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss","./libraty.blocks/dropdown/dropdown.scss":"libraty.blocks/dropdown/dropdown.scss","./libraty.blocks/buttons/bigButtons/bigButton.scss":"libraty.blocks/buttons/bigButtons/bigButton.scss","./libraty.blocks/datepicker/datepickerButton.scss":"libraty.blocks/datepicker/datepickerButton.scss","./libraty.blocks/datepicker/datepicker.js":"libraty.blocks/datepicker/datepicker.js","./libraty.blocks/datepicker/datepicker.scss":"libraty.blocks/datepicker/datepicker.scss","./libraty.blocks/counter/counter.scss":"libraty.blocks/counter/counter.scss","/libraty.blocks/buttons/inlineButtons/inlineButtons.scss":"libraty.blocks/buttons/inlineButtons/inlineButtons.scss","./common.blocks/buttons/inlineButtons/__inlineButton.scss":"common.blocks/buttons/inlineButtons/__inlineButton.scss","./libraty.blocks/dropdown/dateDropdown/dateDropdown.js":"libraty.blocks/dropdown/dateDropdown/dateDropdown.js","./css/jquery-ui-1.12.1.custom/datepicker-ru.js":"css/jquery-ui-1.12.1.custom/datepicker-ru.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -10104,7 +10118,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37880" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9462" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

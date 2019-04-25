@@ -1,6 +1,6 @@
 doctype html 
 head
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    //- <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
     //- <link rel="stylesheet", href="/common.blocks/wishes/wishes.scss">
     title hotel
@@ -13,7 +13,8 @@ body
         div(class='boxWishes__date leave boxWishes__date_margin-right')
             span(class='boxElementHeader') выезд    
             include ./libraty.blocks/dropdown/dateDropdown/dateDropdown_leave.pug
-        include ./libraty.blocks/dropdown/dropdown/dropdown.pug
+        include ./libraty.blocks/dropdown/guestsDropdown/guestsDropdown.pug
+        include ./libraty.blocks/dropdown/guestsDropdown/guestsDropdownContent.pug
         include .\libraty.blocks\buttons\bigButtons\bigButton.pug
         
 script(src="https://code.jquery.com/jquery-3.4.0.js"
