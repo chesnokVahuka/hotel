@@ -11,7 +11,7 @@
     text-align:center;
 }
 .guestsDropdownContent{
-    display: flex;
+    display: none;
     width: 318px;
     box-sizing: content-box;
     flex-wrap:wrap;
@@ -43,5 +43,5 @@
 .guestsDropdownContent__buttonBar{
     display: flex;
     justify-content: space-between;
-    margin: 13px 7px;
+    margin: 13px 7px 13px 15px;
 }

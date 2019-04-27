@@ -24,6 +24,7 @@ import './libraty.blocks/datepicker/datepicker.scss';
 import './libraty.blocks/counter/counter.scss';
 import '/libraty.blocks/buttons/inlineButtons/inlineButtons.scss';
 import './common.blocks/buttons/inlineButtons/__inlineButton.scss';
+import './libraty.blocks/counter/counter.js';
 
 import './libraty.blocks/dropdown/dateDropdown/dateDropdown.js';
 import './css/jquery-ui-1.12.1.custom/datepicker-ru.js';

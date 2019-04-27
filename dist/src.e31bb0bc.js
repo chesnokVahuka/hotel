@@ -7768,7 +7768,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/datepicker/datepickerButton.scss":[function(require,module,exports) {
+},{"./..\\..\\..\\image\\arrow_forward_white.svg":[["arrow_forward_white.957c5b0c.svg","image/arrow_forward_white.svg"],"image/arrow_forward_white.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/datepicker/datepickerButton.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -9973,7 +9973,62 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/dropdown/dateDropdown/dateDropdown.js":[function(require,module,exports) {
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/counter/counter.js":[function(require,module,exports) {
+$(document).ready(function () {
+  var totalCount = $('input[name="guests"]');
+  var text;
+  var guestsCount = 0;
+
+  function printCount(count) {
+    if (count == 0) {
+      text = 'Сколько гостей';
+      totalCount.val(text);
+    } else if (count == 1 || count > 11 && count % 10 == 1) {
+      text = ' гость';
+      totalCount.val(count + text);
+    } else if (count > 1 && count < 5) {
+      text = ' гостя';
+      totalCount.val(count + text);
+    } else if (count > 4 && count < 21) {
+      text = ' гостей';
+      totalCount.val(count + text);
+    } else if (count > 21 && count % 10 < 5 && count % 10 != 0) {
+      text = ' гостя';
+      totalCount.val(count + text);
+    } else if (count > 24 && (count % 10 > 4 || count % 10 == 0)) {
+      text = ' гостей';
+      totalCount.val(count + text);
+    }
+  }
+
+  $('.counter__dec').on('click', function decrement() {
+    var count = $(this).parent().find('.counter__count');
+
+    if (parseInt(count.text()) > 0) {
+      count.text(parseInt(count.text()) - 1);
+      guestsCount -= 1;
+      printCount(guestsCount);
+    }
+  });
+  $('.counter__inc').on('click', function increment() {
+    var count = $(this).parent().find('.counter__count');
+    count.text(parseInt(count.text()) + 1);
+    guestsCount += 1;
+    printCount(guestsCount);
+  });
+  $('.inlineButtonClear').on('click', function () {
+    $('.counter__count').text('0');
+  });
+  $('.guestsDropdown').on('click', function () {
+    // $('.guestsDropdownContent').show("slide", { direction: "up" }, 1000);
+    $('.guestsDropdownContent').fadeIn();
+  });
+  $('.inlineButtonAccept').on('click', function () {
+    // $('.guestsDropdownContent').hide("slide", { direction: "up" }, 1000);
+    $('.guestsDropdownContent').fadeOut();
+  });
+});
+},{}],"libraty.blocks/dropdown/dateDropdown/dateDropdown.js":[function(require,module,exports) {
 $('.leave .datepicker-here').on('focus click', function (event) {
   $(this).off();
 });
@@ -10087,10 +10142,12 @@ require("/libraty.blocks/buttons/inlineButtons/inlineButtons.scss");
 
 require("./common.blocks/buttons/inlineButtons/__inlineButton.scss");
 
+require("./libraty.blocks/counter/counter.js");
+
 require("./libraty.blocks/dropdown/dateDropdown/dateDropdown.js");
 
 require("./css/jquery-ui-1.12.1.custom/datepicker-ru.js");
-},{"./css/jquery-ui-1.12.1.custom/jquery-ui.css":"css/jquery-ui-1.12.1.custom/jquery-ui.css","./css/jquery-ui-1.12.1.custom/jquery-ui.min.js":"css/jquery-ui-1.12.1.custom/jquery-ui.min.js","./css/main.scss":"css/main.scss","./common.blocks/boxWishes/boxWishes.scss":"common.blocks/boxWishes/boxWishes.scss","./common.blocks/boxWishes/__cardHeader.scss":"common.blocks/boxWishes/__cardHeader.scss","./common.blocks/boxWishes/dateDropdown.scss":"common.blocks/boxWishes/dateDropdown.scss","./common.blocks/boxWishes/_margin-left.scss":"common.blocks/boxWishes/_margin-left.scss","./common.blocks/boxWishes/_margin-right.scss":"common.blocks/boxWishes/_margin-right.scss","./common.blocks/boxWishes/__date.scss":"common.blocks/boxWishes/__date.scss","./common.blocks/boxWishes/dropdown/__text.scss":"common.blocks/boxWishes/dropdown/__text.scss","./common.blocks/boxWishes/__guests.scss":"common.blocks/boxWishes/__guests.scss","/common.blocks/buttons/bigButtons/__bigButton.scss":"common.blocks/buttons/bigButtons/__bigButton.scss","./libraty.blocks/boxElementHeader/boxElementHeader.scss":"libraty.blocks/boxElementHeader/boxElementHeader.scss","./libraty.blocks/dropdown/text.scss":"libraty.blocks/dropdown/text.scss","./libraty.blocks/expandMore/expandMore.scss":"libraty.blocks/expandMore/expandMore.scss","./libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss":"libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss","./libraty.blocks/dropdown/dropdown.scss":"libraty.blocks/dropdown/dropdown.scss","./libraty.blocks/buttons/bigButtons/bigButton.scss":"libraty.blocks/buttons/bigButtons/bigButton.scss","./libraty.blocks/datepicker/datepickerButton.scss":"libraty.blocks/datepicker/datepickerButton.scss","./libraty.blocks/datepicker/datepicker.js":"libraty.blocks/datepicker/datepicker.js","./libraty.blocks/datepicker/datepicker.scss":"libraty.blocks/datepicker/datepicker.scss","./libraty.blocks/counter/counter.scss":"libraty.blocks/counter/counter.scss","/libraty.blocks/buttons/inlineButtons/inlineButtons.scss":"libraty.blocks/buttons/inlineButtons/inlineButtons.scss","./common.blocks/buttons/inlineButtons/__inlineButton.scss":"common.blocks/buttons/inlineButtons/__inlineButton.scss","./libraty.blocks/dropdown/dateDropdown/dateDropdown.js":"libraty.blocks/dropdown/dateDropdown/dateDropdown.js","./css/jquery-ui-1.12.1.custom/datepicker-ru.js":"css/jquery-ui-1.12.1.custom/datepicker-ru.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./css/jquery-ui-1.12.1.custom/jquery-ui.css":"css/jquery-ui-1.12.1.custom/jquery-ui.css","./css/jquery-ui-1.12.1.custom/jquery-ui.min.js":"css/jquery-ui-1.12.1.custom/jquery-ui.min.js","./css/main.scss":"css/main.scss","./common.blocks/boxWishes/boxWishes.scss":"common.blocks/boxWishes/boxWishes.scss","./common.blocks/boxWishes/__cardHeader.scss":"common.blocks/boxWishes/__cardHeader.scss","./common.blocks/boxWishes/dateDropdown.scss":"common.blocks/boxWishes/dateDropdown.scss","./common.blocks/boxWishes/_margin-left.scss":"common.blocks/boxWishes/_margin-left.scss","./common.blocks/boxWishes/_margin-right.scss":"common.blocks/boxWishes/_margin-right.scss","./common.blocks/boxWishes/__date.scss":"common.blocks/boxWishes/__date.scss","./common.blocks/boxWishes/dropdown/__text.scss":"common.blocks/boxWishes/dropdown/__text.scss","./common.blocks/boxWishes/__guests.scss":"common.blocks/boxWishes/__guests.scss","/common.blocks/buttons/bigButtons/__bigButton.scss":"common.blocks/buttons/bigButtons/__bigButton.scss","./libraty.blocks/boxElementHeader/boxElementHeader.scss":"libraty.blocks/boxElementHeader/boxElementHeader.scss","./libraty.blocks/dropdown/text.scss":"libraty.blocks/dropdown/text.scss","./libraty.blocks/expandMore/expandMore.scss":"libraty.blocks/expandMore/expandMore.scss","./libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss":"libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss","./libraty.blocks/dropdown/dropdown.scss":"libraty.blocks/dropdown/dropdown.scss","./libraty.blocks/buttons/bigButtons/bigButton.scss":"libraty.blocks/buttons/bigButtons/bigButton.scss","./libraty.blocks/datepicker/datepickerButton.scss":"libraty.blocks/datepicker/datepickerButton.scss","./libraty.blocks/datepicker/datepicker.js":"libraty.blocks/datepicker/datepicker.js","./libraty.blocks/datepicker/datepicker.scss":"libraty.blocks/datepicker/datepicker.scss","./libraty.blocks/counter/counter.scss":"libraty.blocks/counter/counter.scss","/libraty.blocks/buttons/inlineButtons/inlineButtons.scss":"libraty.blocks/buttons/inlineButtons/inlineButtons.scss","./common.blocks/buttons/inlineButtons/__inlineButton.scss":"common.blocks/buttons/inlineButtons/__inlineButton.scss","./libraty.blocks/counter/counter.js":"libraty.blocks/counter/counter.js","./libraty.blocks/dropdown/dateDropdown/dateDropdown.js":"libraty.blocks/dropdown/dateDropdown/dateDropdown.js","./css/jquery-ui-1.12.1.custom/datepicker-ru.js":"css/jquery-ui-1.12.1.custom/datepicker-ru.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -10118,7 +10175,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9462" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "26823" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
