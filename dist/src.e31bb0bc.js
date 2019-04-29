@@ -7738,6 +7738,31 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/buttons/inlineButtons/__inlineButton.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxRegistration/__textField.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxRegistration/boxRegistration.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/buttons/radioButtons/__radioButton.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/boxWishes/dropdown/_width_100.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/boxElementHeader/boxElementHeader.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
@@ -7748,7 +7773,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/expandMore/expandMore.scss":[function(require,module,exports) {
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/buttons/expandMore/expandMore.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -9968,7 +9993,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"common.blocks/buttons/inlineButtons/__inlineButton.scss":[function(require,module,exports) {
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"libraty.blocks/textField/textField.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -10029,10 +10054,10 @@ $(document).ready(function () {
   });
 });
 },{}],"libraty.blocks/dropdown/dateDropdown/dateDropdown.js":[function(require,module,exports) {
-$('.leave .datepicker-here').on('focus click', function (event) {
-  $(this).off();
-});
-var datepicker = $('.datepicker-here').datepicker({
+//    $('.leave .datepicker-here').on('focus click',function(event){
+//     $(this).off();    
+// })
+var datepicker = $('.leave input').datepicker({
   minDate: new Date(),
   // offset:0,
   range: true,
@@ -10043,8 +10068,8 @@ var datepicker = $('.datepicker-here').datepicker({
   altFieldDateFormat: 'dd.mm.yyyy',
   onSelect: function onSelect(date) {
     var arriveDate = date;
-    $('.arrive').val(arriveDate.substring(0, 10));
-    $('.leave').val(arriveDate.substring(11, arriveDate.length));
+    $('[name=arrive]').val(arriveDate.substring(0, 10));
+    $('[name=leave]').val(arriveDate.substring(11, arriveDate.length));
   }
 }).data('datepicker');
 $('.dateDropdown input').on('keypress', function (event) {
@@ -10054,8 +10079,11 @@ $('.datepicker--buttons').append('<span class="datepicker--button accept"> Пр�
 $('.accept').on('click', function () {
   datepicker.hide();
 });
-$('.dateDropdown').on('click', function () {
+$('.leave, .arrive').on('click', function () {
   datepicker.show();
+});
+$('.dateDropdown:has(#birthiday)').on('click', function () {
+  $('#birthiday').focus();
 });
 },{}],"css/jquery-ui-1.12.1.custom/datepicker-ru.js":[function(require,module,exports) {
 var define;
@@ -10118,11 +10146,21 @@ require("./common.blocks/boxWishes/__guests.scss");
 
 require("/common.blocks/buttons/bigButtons/__bigButton.scss");
 
+require("./common.blocks/buttons/inlineButtons/__inlineButton.scss");
+
+require("./common.blocks/boxRegistration/__textField.scss");
+
+require("./common.blocks/boxRegistration/boxRegistration.scss");
+
+require("./common.blocks/buttons/radioButtons/__radioButton.scss");
+
+require("./common.blocks/boxWishes/dropdown/_width_100.scss");
+
 require("./libraty.blocks/boxElementHeader/boxElementHeader.scss");
 
 require("./libraty.blocks/dropdown/text.scss");
 
-require("./libraty.blocks/expandMore/expandMore.scss");
+require("./libraty.blocks/buttons/expandMore/expandMore.scss");
 
 require("./libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss");
 
@@ -10140,14 +10178,14 @@ require("./libraty.blocks/counter/counter.scss");
 
 require("/libraty.blocks/buttons/inlineButtons/inlineButtons.scss");
 
-require("./common.blocks/buttons/inlineButtons/__inlineButton.scss");
+require("/libraty.blocks/textField/textField.scss");
 
 require("./libraty.blocks/counter/counter.js");
 
 require("./libraty.blocks/dropdown/dateDropdown/dateDropdown.js");
 
 require("./css/jquery-ui-1.12.1.custom/datepicker-ru.js");
-},{"./css/jquery-ui-1.12.1.custom/jquery-ui.css":"css/jquery-ui-1.12.1.custom/jquery-ui.css","./css/jquery-ui-1.12.1.custom/jquery-ui.min.js":"css/jquery-ui-1.12.1.custom/jquery-ui.min.js","./css/main.scss":"css/main.scss","./common.blocks/boxWishes/boxWishes.scss":"common.blocks/boxWishes/boxWishes.scss","./common.blocks/boxWishes/__cardHeader.scss":"common.blocks/boxWishes/__cardHeader.scss","./common.blocks/boxWishes/dateDropdown.scss":"common.blocks/boxWishes/dateDropdown.scss","./common.blocks/boxWishes/_margin-left.scss":"common.blocks/boxWishes/_margin-left.scss","./common.blocks/boxWishes/_margin-right.scss":"common.blocks/boxWishes/_margin-right.scss","./common.blocks/boxWishes/__date.scss":"common.blocks/boxWishes/__date.scss","./common.blocks/boxWishes/dropdown/__text.scss":"common.blocks/boxWishes/dropdown/__text.scss","./common.blocks/boxWishes/__guests.scss":"common.blocks/boxWishes/__guests.scss","/common.blocks/buttons/bigButtons/__bigButton.scss":"common.blocks/buttons/bigButtons/__bigButton.scss","./libraty.blocks/boxElementHeader/boxElementHeader.scss":"libraty.blocks/boxElementHeader/boxElementHeader.scss","./libraty.blocks/dropdown/text.scss":"libraty.blocks/dropdown/text.scss","./libraty.blocks/expandMore/expandMore.scss":"libraty.blocks/expandMore/expandMore.scss","./libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss":"libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss","./libraty.blocks/dropdown/dropdown.scss":"libraty.blocks/dropdown/dropdown.scss","./libraty.blocks/buttons/bigButtons/bigButton.scss":"libraty.blocks/buttons/bigButtons/bigButton.scss","./libraty.blocks/datepicker/datepickerButton.scss":"libraty.blocks/datepicker/datepickerButton.scss","./libraty.blocks/datepicker/datepicker.js":"libraty.blocks/datepicker/datepicker.js","./libraty.blocks/datepicker/datepicker.scss":"libraty.blocks/datepicker/datepicker.scss","./libraty.blocks/counter/counter.scss":"libraty.blocks/counter/counter.scss","/libraty.blocks/buttons/inlineButtons/inlineButtons.scss":"libraty.blocks/buttons/inlineButtons/inlineButtons.scss","./common.blocks/buttons/inlineButtons/__inlineButton.scss":"common.blocks/buttons/inlineButtons/__inlineButton.scss","./libraty.blocks/counter/counter.js":"libraty.blocks/counter/counter.js","./libraty.blocks/dropdown/dateDropdown/dateDropdown.js":"libraty.blocks/dropdown/dateDropdown/dateDropdown.js","./css/jquery-ui-1.12.1.custom/datepicker-ru.js":"css/jquery-ui-1.12.1.custom/datepicker-ru.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./css/jquery-ui-1.12.1.custom/jquery-ui.css":"css/jquery-ui-1.12.1.custom/jquery-ui.css","./css/jquery-ui-1.12.1.custom/jquery-ui.min.js":"css/jquery-ui-1.12.1.custom/jquery-ui.min.js","./css/main.scss":"css/main.scss","./common.blocks/boxWishes/boxWishes.scss":"common.blocks/boxWishes/boxWishes.scss","./common.blocks/boxWishes/__cardHeader.scss":"common.blocks/boxWishes/__cardHeader.scss","./common.blocks/boxWishes/dateDropdown.scss":"common.blocks/boxWishes/dateDropdown.scss","./common.blocks/boxWishes/_margin-left.scss":"common.blocks/boxWishes/_margin-left.scss","./common.blocks/boxWishes/_margin-right.scss":"common.blocks/boxWishes/_margin-right.scss","./common.blocks/boxWishes/__date.scss":"common.blocks/boxWishes/__date.scss","./common.blocks/boxWishes/dropdown/__text.scss":"common.blocks/boxWishes/dropdown/__text.scss","./common.blocks/boxWishes/__guests.scss":"common.blocks/boxWishes/__guests.scss","/common.blocks/buttons/bigButtons/__bigButton.scss":"common.blocks/buttons/bigButtons/__bigButton.scss","./common.blocks/buttons/inlineButtons/__inlineButton.scss":"common.blocks/buttons/inlineButtons/__inlineButton.scss","./common.blocks/boxRegistration/__textField.scss":"common.blocks/boxRegistration/__textField.scss","./common.blocks/boxRegistration/boxRegistration.scss":"common.blocks/boxRegistration/boxRegistration.scss","./common.blocks/buttons/radioButtons/__radioButton.scss":"common.blocks/buttons/radioButtons/__radioButton.scss","./common.blocks/boxWishes/dropdown/_width_100.scss":"common.blocks/boxWishes/dropdown/_width_100.scss","./libraty.blocks/boxElementHeader/boxElementHeader.scss":"libraty.blocks/boxElementHeader/boxElementHeader.scss","./libraty.blocks/dropdown/text.scss":"libraty.blocks/dropdown/text.scss","./libraty.blocks/buttons/expandMore/expandMore.scss":"libraty.blocks/buttons/expandMore/expandMore.scss","./libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss":"libraty.blocks/dropdown/guestsDropdown/guestsDropdown.scss","./libraty.blocks/dropdown/dropdown.scss":"libraty.blocks/dropdown/dropdown.scss","./libraty.blocks/buttons/bigButtons/bigButton.scss":"libraty.blocks/buttons/bigButtons/bigButton.scss","./libraty.blocks/datepicker/datepickerButton.scss":"libraty.blocks/datepicker/datepickerButton.scss","./libraty.blocks/datepicker/datepicker.js":"libraty.blocks/datepicker/datepicker.js","./libraty.blocks/datepicker/datepicker.scss":"libraty.blocks/datepicker/datepicker.scss","./libraty.blocks/counter/counter.scss":"libraty.blocks/counter/counter.scss","/libraty.blocks/buttons/inlineButtons/inlineButtons.scss":"libraty.blocks/buttons/inlineButtons/inlineButtons.scss","/libraty.blocks/textField/textField.scss":"libraty.blocks/textField/textField.scss","./libraty.blocks/counter/counter.js":"libraty.blocks/counter/counter.js","./libraty.blocks/dropdown/dateDropdown/dateDropdown.js":"libraty.blocks/dropdown/dateDropdown/dateDropdown.js","./css/jquery-ui-1.12.1.custom/datepicker-ru.js":"css/jquery-ui-1.12.1.custom/datepicker-ru.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -10175,7 +10213,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "26823" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "12285" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

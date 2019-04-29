@@ -1,8 +1,8 @@
 
-   $('.leave .datepicker-here').on('focus click',function(event){
-    $(this).off();    
-})
-  var datepicker = $('.datepicker-here').datepicker({
+//    $('.leave .datepicker-here').on('focus click',function(event){
+//     $(this).off();    
+// })
+  var datepicker = $('.leave input').datepicker({
         minDate: new Date(),
         // offset:0,
         range: true,
@@ -13,9 +13,8 @@
         altFieldDateFormat:'dd.mm.yyyy',
         onSelect:function(date){
             let arriveDate = date;
-            $('.arrive').val(arriveDate.substring(0,10));
-            $('.leave').val(arriveDate.substring(11,arriveDate.length));
-            
+            $('[name=arrive]').val(arriveDate.substring(0,10));
+            $('[name=leave]').val(arriveDate.substring(11,arriveDate.length));            
         }   
         }).data('datepicker');
        
@@ -27,7 +26,12 @@ $('.accept').on('click',function(){
   
     datepicker.hide();
 })
-$('.dateDropdown').on('click',function(){
+$('.leave, .arrive').on('click',function(){
     datepicker.show();
 })
+$('.dateDropdown:has(#birthiday)').on('click',function(){
+    $('#birthiday').focus();
+})
+
+
 

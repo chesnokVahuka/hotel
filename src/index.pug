@@ -6,17 +6,33 @@ head
     title hotel
 body
     div(class='boxWishes')
-        h1(class='cardHeader boxWishes__cardHeader') Найдём номера под <br>ваши пожелания
-        div(class='boxWishes__date boxWishes__date_margin-left')
+        h1(class='cardHeader box__cardHeader') Найдём номера под <br>ваши пожелания
+        div(class='box__date box__date_margin-left')
             span(class='boxElementHeader') прибытие
-            include ./libraty.blocks/dropdown/dateDropdown/dateDropdown_arrive.pug
-        div(class='boxWishes__date leave boxWishes__date_margin-right')
-            span(class='boxElementHeader') выезд    
-            include ./libraty.blocks/dropdown/dateDropdown/dateDropdown_leave.pug
+            
+            //- include ./libraty.blocks/dropdown/dateDropdown/dateDropdown_arrive.pug
+            include ./libraty.blocks/dropdown/dateDropdown/dateDropdown.pug
+            +dateDropdown('ДД.ММ.ГГГГ','dropdown dateDropdown arrive box__dateDropdown','datepicker-here', 'arrive')
+        div(class='box__date leave box__date_margin-right')
+            span(class='boxElementHeader') выезд 
+            +dateDropdown('ДД.ММ.ГГГГ','dropdown dateDropdown leave box__dateDropdown','', 'leave')
+   
+            //- include ./libraty.blocks/dropdown/dateDropdown/dateDropdown_leave.pug
         include ./libraty.blocks/dropdown/guestsDropdown/guestsDropdown.pug
         include ./libraty.blocks/dropdown/guestsDropdown/guestsDropdownContent.pug
         include .\libraty.blocks\buttons\bigButtons\bigButton.pug
-        
+    div(class='boxRegistration')
+         h1(class='cardHeader box__cardHeader') Регистрация аккаунта
+         mixin textField(text)
+            input(type="text" placeholder= text class='textField box__textField')
+         +textField('Имя')
+         +textField('Фамилия')
+         include ./libraty.blocks/buttons/radioButtons/radioButton.pug
+         //-  include ./libraty.blocks/dropdown/dateDropdown/dateDropdown.pug
+         div(class='box__date box__date_width_100')
+            span(class='boxElementHeader') дата рождения 
+            +dateDropdown('ДД.ММ.ГГГГ','dropdown dateDropdown box__dropdown box__dropdown_width_100', 'datepicker-here','','birthiday')
+
 script(src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="  crossorigin="anonymous")  
 //- script(src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js")      
 script(src="index.js")

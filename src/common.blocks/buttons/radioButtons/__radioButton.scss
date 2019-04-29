@@ -1,0 +1,35 @@
+.box__radioButtonsBar{
+    width: 320px;
+    display: flex;
+    margin: 10px auto;
+    color: rgba(31, 32, 65, 0.5);
+
+}
+
+.box__radioButton{
+    align-self: center;
+    -webkit-appearance: none;
+    background: #FFFFFF;
+    /* Dark 25% */
+    outline: none;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+   
+}
+.box__radioButton:checked{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 1px rgba(31, 32, 65, 0.25);
+}
+.radioButtonLabel{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+input:checked + .radioButtonLabel {
+    color: rgba(31, 32, 65, 0.75);
+}

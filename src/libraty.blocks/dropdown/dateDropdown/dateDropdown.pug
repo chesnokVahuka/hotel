@@ -1,3 +1,9 @@
-div(class='dateDropdown arrive boxWishes__dateDropdown')
-     span(class='dropdownText') ДД.ММ.ГГГГ                     
-     div(class='expandMore')
+//- div(class='dateDropdown box__dateDropdown')
+//-      span(class='dropdown__TextWrap')
+//-           input(type="text" placeholder="ДД.ММ.ГГГГ" class='dropdownText datepicker-here')                     
+//-      div(class='expandMore')
+mixin dateDropdown(placeholder,className,inputtype,name, id)  
+     div(class=className)
+          span(class='dropdown__TextWrap')
+               input(type="text" placeholder=placeholder class='dropdownText '+inputtype name=name id=id)                     
+          div(class='expandMore')

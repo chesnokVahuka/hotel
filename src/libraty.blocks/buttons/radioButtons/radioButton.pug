@@ -1,0 +1,6 @@
+div(class='radioButtonsBar box__radioButtonsBar')
+    mixin radioButton(value,id,checked)    
+        input(type='radio' name ='gender' class='radioButton box__radioButton' id=id checked=checked)
+        label(class='radioButtonLabel' for=id)= value
+    +radioButton('мужчина','radioButtonMen',true)
+    +radioButton('женщина','radioButtonWoman',false)
