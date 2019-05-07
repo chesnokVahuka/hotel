@@ -32,7 +32,13 @@ body
          div(class='box__date box__date_width_100')
             span(class='boxElementHeader') дата рождения 
             +dateDropdown('ДД.ММ.ГГГГ','dropdown dateDropdown box__dropdown box__dropdown_width_100', 'datepicker-here','','birthiday')
+           
+         span(class='boxElementHeader box__boxElementHeader') данные для входа в сервис          
+         +textField('Email')
+         +textField('Пароль')
 
+         include .\libraty.blocks\buttons\checkbox\checkbox.pug
+         +checkbox()
 script(src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="  crossorigin="anonymous")  
 //- script(src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js")      
 script(src="index.js")

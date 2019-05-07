@@ -16,6 +16,8 @@ import './common.blocks/boxRegistration/__textField.scss';
 import './common.blocks/boxRegistration/boxRegistration.scss';
 import './common.blocks/buttons/radioButtons/__radioButton.scss';
 import './common.blocks/boxWishes/dropdown/_width_100.scss';
+import './common.blocks/boxRegistration/__boxElementHeader.scss';
+import './common.blocks/boxRegistration/__checkboxBar.scss';
 
 import './libraty.blocks/boxElementHeader/boxElementHeader.scss';
 import './libraty.blocks/dropdown/text.scss';
@@ -30,6 +32,8 @@ import './libraty.blocks/counter/counter.scss';
 import '/libraty.blocks/buttons/inlineButtons/inlineButtons.scss';
 import '/libraty.blocks/textField/textField.scss';
 import './libraty.blocks/counter/counter.js';
+import './libraty.blocks/buttons/checkbox/checkbox.scss';
+
 
 import './libraty.blocks/dropdown/dateDropdown/dateDropdown.js';
 import './css/jquery-ui-1.12.1.custom/datepicker-ru.js';
