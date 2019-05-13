@@ -1,0 +1,12 @@
+.loginBlock{
+    display: flex;
+    align-items: center;
+
+}
+.loginBlock__link,
+.loginBlock__link:active
+{
+    text-decoration: none;
+    color:#000;
+    margin: 0px 35px 0px 0px;
+}

@@ -18,6 +18,11 @@ import './common.blocks/buttons/radioButtons/__radioButton.scss';
 import './common.blocks/boxWishes/dropdown/_width_100.scss';
 import './common.blocks/boxRegistration/__boxElementHeader.scss';
 import './common.blocks/boxRegistration/__checkboxBar.scss';
+import './common.blocks/boxRegistration/__loginBlock.scss';
+import './common.blocks/buttons/mediumButtons/__mediumButton_transparent_disable.scss';
+import './common.blocks/buttons/mediumButtons/__mediumButton_transparent_enabled.scss';
+import './common.blocks/buttons/mediumButtons/__mediumButton_fill_enabled.scss';
+import './common.blocks/buttons/mediumButtons/__mediumButton_fill_disabled.scss';
 
 import './libraty.blocks/boxElementHeader/boxElementHeader.scss';
 import './libraty.blocks/dropdown/text.scss';
@@ -33,6 +38,8 @@ import '/libraty.blocks/buttons/inlineButtons/inlineButtons.scss';
 import '/libraty.blocks/textField/textField.scss';
 import './libraty.blocks/counter/counter.js';
 import './libraty.blocks/buttons/checkbox/checkbox.scss';
+import './libraty.blocks/buttons/mediumButtons/mediumButton.scss';
+import './libraty.blocks/loginBlock/loginBlock.scss';
 
 
 import './libraty.blocks/dropdown/dateDropdown/dateDropdown.js';

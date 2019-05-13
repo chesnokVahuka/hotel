@@ -1398,7 +1398,7 @@ h1 {
 .boxWishes__guests {
   margin: 20px auto 0px;
 }
-.boxWishes__bigButton {
+.box__bigButton {
   margin: 30px;
 }
 .guestsDropdownContent__inlineButton {
@@ -1418,7 +1418,7 @@ h1 {
 .boxRegistration {
   display: flex;
   flex-wrap: wrap;
-  width: 378px;
+  max-width: 378px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: content-box;
@@ -1471,6 +1471,37 @@ input:checked + .radioButtonLabel {
 .box__checkboxBar {
   margin-left: 30px;
   margin-top: 10px;
+}
+.box__loginBlock {
+  margin: 10px auto;
+}
+.mediumButton_transparent_disabled {
+  border: 2px solid;
+  border-color: #BC9CFF;
+  opacity: 0.5;
+}
+.mediumButton_transparent_disabled h3 {
+  color: #BC9CFF;
+}
+.mediumButton_transparent_enabled {
+  border: 2px solid;
+  border-color: #BC9CFF;
+}
+.mediumButton_transparent_enabled h3 {
+  color: #BC9CFF;
+}
+.mediumButton_fill_enabled {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.mediumButton_fill_enabled h3 {
+  color: #fff;
+}
+.mediumButton_fill_disabled {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.5;
+}
+.mediumButton_fill_disabled h3 {
+  color: #fff;
 }
 .boxElementHeader {
   font-family: Montserrat;
@@ -1560,6 +1591,7 @@ input:checked + .radioButtonLabel {
   justify-content: center;
   align-items: center;
   width: 320px;
+  height: 44px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
   text-align: center;
@@ -2627,6 +2659,26 @@ opacity: 0.25;} */
 .checkbox:checked + label.switch:after {
   left: 26px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.mediumButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 44px;
+  border-radius: 22px;
+  box-sizing: border-box;
+}
+.loginBlock {
+  display: flex;
+  align-items: center;
+}
+
+.loginBlock__link,
+.loginBlock__link:active {
+  text-decoration: none;
+  color: #000;
+  margin: 0px 35px 0px 0px;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

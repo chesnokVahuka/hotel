@@ -1,0 +1,5 @@
+mixin loginBlock(text, classname)
+     div(class=classname)
+        a(href="#" class='loginBlock__link')
+            p=text
+        +mediumButton('Войти','mediumButton loginBlock__mediumButton mediumButton_transparent_enabled')

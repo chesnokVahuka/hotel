@@ -21,6 +21,7 @@ body
         include ./libraty.blocks/dropdown/guestsDropdown/guestsDropdown.pug
         include ./libraty.blocks/dropdown/guestsDropdown/guestsDropdownContent.pug
         include .\libraty.blocks\buttons\bigButtons\bigButton.pug
+        +bigButton('Подобрать номер')
     div(class='boxRegistration')
          h1(class='cardHeader box__cardHeader') Регистрация аккаунта
          mixin textField(text)
@@ -39,6 +40,10 @@ body
 
          include .\libraty.blocks\buttons\checkbox\checkbox.pug
          +checkbox()
+         +bigButton('Перейти к оплате')
+         include .\libraty.blocks\buttons\mediumButtons\mediumButton.pug
+         include .\libraty.blocks\loginBlock\loginBlock.pug
+         +loginBlock('Уже есть аккаунт на Toxin','loginBlock box__loginBlock ')
 script(src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="  crossorigin="anonymous")  
 //- script(src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js")      
 script(src="index.js")
